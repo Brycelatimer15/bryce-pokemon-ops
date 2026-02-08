@@ -1,20 +1,9 @@
+# Bryce Pokémon Ops (Streamlit App) - v2
 
-# Bryce Pokémon Ops (Streamlit App)
+## Fix included
+- Detects Collectr column: "Market Price (As of YYYY-MM-DD)" automatically (e.g., Market Price (As of 2026-02-08))
+- Strips "$" and commas when converting numbers
+- Debug panel appears if collection value computes to $0
 
-## Run locally
-1) Install Python 3.10+
-2) In a terminal:
-   pip install -r requirements.txt
-3) Start:
-   streamlit run app.py
-
-## Weekly workflow
-1) Export from Collectr (CSV)
-2) Upload CSV into app
-3) (Optional but recommended) Upload last week's history.csv
-4) Download the new history.csv and save it for next week
-
-## Notes
-- Uses conservative eBay fee and shipping assumptions (editable in sidebar)
-- Allocates pack spend across items where Avg Cost Paid = 0, proportional to value
-- Trend alerts require accumulating history over multiple weeks
+## Deploy
+Push these files to GitHub and deploy with Streamlit Community Cloud (main file: app.py)
